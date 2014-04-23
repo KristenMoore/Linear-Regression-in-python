@@ -27,8 +27,10 @@ plt.show()
 # ======= format & normalize the data =======
 x=data[:,[0,1]]
 Y=data[:,-1]
+print shape(Y)
 m=len(Y)
 y=reshape(Y,(m,1))
+print shape(y)
 # perform feature normalization
 def featureNormalize(X):
     X_norm=X
